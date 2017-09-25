@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Registration Page</title>
+</h:head>
+<h:body>
+	<f:view>
+		<h:form id="registerForm">
+		
+			<table>
+				<tr>
+					<td><h:outputText value="Enter Your First Name:" /></td>
+					<td><h:inputText id="fn" required="true" requiredMessage="enter your first name" /></td>
+					<td><h:message for="fn" style="color:red" /></td>
+				</tr>
+				
+				<tr>
+					<td><h:outputText value="Enter Your Last Name:" /></td>
+					<td><h:inputText id="ln" 
+							required="true" requiredMessage="enter your last name" /></td>
+					<td><h:message for="ln" style="color:red" /></td>
+				</tr>
+				
+				
+				<tr>
+					<td><h:outputText value="Enter Your Last Address:" /></td>
+					<td><h:inputText id="add" required="true" requiredMessage="enter your address" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Enter Your Phone Number:" /></td>
+					<td><h:inputText id="pn" 
+							required="true" requiredMessage="enter your Phone Number" /></td>
+					<td><h:message for="pn" style="color:red" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Enter Your email ID:" /></td>
+					<td><h:inputText id="email" 
+							required="true" requiredMessage="Please enter your email id" /></td>
+					<td><h:message for="email" style="color:red" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Enter Your username:" /></td>
+					<td><h:inputText id="un" 
+							required="true" requiredMessage="enter your username" /></td>
+					<td><h:message for="un" style="color:red" /></td>
+				</tr>
+				<tr>
+					<td><h:outputText value="Enter Password :" /></td>
+					<td><h:inputSecret id="psw"
+							required="true" requiredMessage="Please enter your password" /></td>
+					<td><h:message for="psw" style="color:red" /></td>
+				</tr>
+
+
+				<tr>
+					
+					<td><h:commandButton value="Register" action="#{reg_bean.registration}" /></td>
+				</tr>
+				
+			</table>
+		</h:form>
+	</f:view>
+</h:body>
+</html>
