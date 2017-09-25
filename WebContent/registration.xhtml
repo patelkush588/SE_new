@@ -4,37 +4,53 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core">
-
+	<h:outputStylesheet library="css" name="style.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</link>
 <h:head>
 	<title>Registration Page</title>
 </h:head>
+<style>
+.abc
+{
+    margin: 100px 100px 100px 100px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #a9c6da;
+    height: 100%;
+}
+</style>
 <h:body>
 	<f:view>
-		<h:form id="registerForm">
+		<h:form id="registerForm" class="abc">
 		
 			<table>
 				<tr>
 					<td><h:outputText value="Enter Your First Name:" /></td>
-					<td><h:inputText id="fn" required="true" requiredMessage="enter your first name" /></td>
+					<td><h:inputText id="fn" required="true" requiredMessage="please enter your first name" /></td>
 					<td><h:message for="fn" style="color:red" /></td>
 				</tr>
 				
 				<tr>
 					<td><h:outputText value="Enter Your Last Name:" /></td>
 					<td><h:inputText id="ln" 
-							required="true" requiredMessage="enter your last name" /></td>
+							required="true" requiredMessage="please enter your last name" /></td>
 					<td><h:message for="ln" style="color:red" /></td>
 				</tr>
 				
 				
 				<tr>
-					<td><h:outputText value="Enter Your Last Address:" /></td>
-					<td><h:inputText id="add" required="true" requiredMessage="enter your address" /></td>
+					<td><h:outputText value="Enter Your Address:" /></td>
+					<td><h:inputText id="add" required="true" requiredMessage="please enter your address" /></td>
+				<td><h:message for="add" style="color:red" /></td>
 				</tr>
 				<tr>
 					<td><h:outputText value="Enter Your Phone Number:" /></td>
 					<td><h:inputText id="pn" 
-							required="true" requiredMessage="enter your Phone Number" /></td>
+							required="true" requiredMessage="please enter your Phone Number" /></td>
 					<td><h:message for="pn" style="color:red" /></td>
 				</tr>
 				<tr>
@@ -46,7 +62,7 @@
 				<tr>
 					<td><h:outputText value="Enter Your username:" /></td>
 					<td><h:inputText id="un" 
-							required="true" requiredMessage="enter your username" /></td>
+							required="true" requiredMessage="please enter your username" /></td>
 					<td><h:message for="un" style="color:red" /></td>
 				</tr>
 				<tr>
